@@ -48,7 +48,7 @@ head(total_steps)
 hist(total_steps$steps, main = "Total number of steps taken each day", xlab = "Steps", col = "blue")
 ```
 
-![](/Volumes/LocalData/Developer/RepData_PeerAssessment1/PA1_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-3-1.png)
 
 
 ```r
@@ -94,7 +94,7 @@ head(avg_steps)
 plot(avg_steps$interval, avg_steps$steps, type = "l", xlab = "Interval", ylab = "Average number of steps taken", main = "Average number of steps taken per interval")
 ```
 
-![](/Volumes/LocalData/Developer/RepData_PeerAssessment1/PA1_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-7-1.png)
 
 
 ```r
@@ -153,7 +153,7 @@ total_steps2 <- aggregate(steps ~ date, data, sum)
 hist(total_steps2$steps, main = "Total number of steps taken each day", xlab = "Steps", col = "blue")
 ```
 
-![](/Volumes/LocalData/Developer/RepData_PeerAssessment1/PA1_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-12-1.png)
 
 
 ```r
@@ -215,6 +215,6 @@ library(lattice)
 xyplot(steps ~ interval | day_type, data = avg_steps2, type = "l", layout = c(1, 2), xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](/Volumes/LocalData/Developer/RepData_PeerAssessment1/PA1_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-16-1.png)
 
 **There are differences in activity patterns between weekdays and weekends.**
